@@ -26,9 +26,7 @@ def jogar(nome):
     while(chute_usuario != numero_secreto):
         if(chute_usuario != numero_secreto):
             print("Você errou o número secreto!")
-            print(f"O número secreto era: {numero_secreto}")
-            numero_secreto = np.random.randint(0, 10)
-            chute_usuario = int(input("Digite um novo número de 0 a 10: "))
+            chute_usuario = int(input("Digite um novo número: "))
         tentativas += 1
     pontuacao -= tentativas
     print("Você acertou o número secreto com {} tentativas, sua pontuação é {}!".format(tentativas, pontuacao))
