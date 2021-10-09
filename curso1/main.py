@@ -12,6 +12,7 @@ def escolhe_jogo():
     if(opcao == 1):
         adivinhacao.jogar(nome)
     elif(opcao == 2):
+        #forca.escreve_arquivo()
         forca.jogar(nome)
     else:
         while(opcao !=1 or opcao!=2):
